@@ -7,7 +7,7 @@ terraform {
     }
   }
   cloud {
-    organization = "swhashi"
+    organization = "ahussain-tfc-org"
     workspaces {
       name = "boundary-demo-init"
     }

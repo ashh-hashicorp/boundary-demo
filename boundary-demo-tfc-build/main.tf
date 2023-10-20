@@ -147,13 +147,13 @@ resource "tfe_project_variable_set" "boundary_demo_varset" {
 }
 
 # Get information on the variable set that contains the AWS credentials
-data "tfe_variable_set" "aws_varset" {
-    name = var.aws_varset
-    organization = var.organization
-}
+#data "tfe_variable_set" "aws_varset" {
+#    name = var.aws_varset
+#    organization = var.organization
+#}
 
 # Add the varset with AWS credentials to the project
-resource "tfe_project_variable_set" "aws_varset" {
-    variable_set_id = data.tfe_variable_set.aws_varset.id
-    project_id = tfe_project.boundary_demo_project.id
-}
+#resource "tfe_project_variable_set" "aws_varset" {
+#    variable_set_id = data.tfe_variable_set.aws_varset.id
+#   project_id = tfe_project.boundary_demo_project.id
+#}
