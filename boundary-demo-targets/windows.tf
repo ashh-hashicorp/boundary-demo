@@ -19,7 +19,7 @@ module "rdp-sec-group" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "4.17.1"
 
-  name        = "rdp-sec-group"
+  name        = "rdp-sec-group-2"
   description = "Allow Access from Boundary Worker to RDP target"
   vpc_id      = module.boundary-eks-vpc.vpc_id
 
